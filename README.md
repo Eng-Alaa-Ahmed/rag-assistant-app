@@ -12,6 +12,7 @@ electronic components (resistor, capacitor, transistor, IC, etc.) from an upload
 - **Track:** Extended
 
 ## Architecture
+   ![Architecture Diagram](architecture.svg)
 
 User asks a question (with optional photo) in the Streamlit Frontend, which calls the
 FastAPI Backend. The backend retrieves relevant chunks from the Chroma Vector Store,
