@@ -1,0 +1,32 @@
+question,answer,sources
+What is a transistor?,"A transistor is a semiconductor device. It is a 3 layer device. Two types of arrangements are possible -- npn or pnp. (Source 1, Page 54)","Page 54, Page 57, Page 54"
+What is a resistor and how is it measured?,"A resistor is a transducer that changes its resistance value due to an applied mechanical motion or due to input temperature, light, etc. (Source 2, Page 171). The resistance of a resistor is given by the formula R = ρ / (l * a), where ρ is the resistivity of the conductor, l is the length of the conductor, and a is the area of the conductor. (Source 1, Page 174).
+
+To measure a resistor, you can use a Wheatstone bridge as shown in Figure 11.7 (Source 3, Page 175).
+
+Sources:
+- Source 2, Page 171
+- Source 1, Page 174
+- Source 3, Page 175","Page 174, Page 171, Page 175"
+What is the difference between NPN and PNP transistors?,"The main difference between NPN and PNP transistors is the type of semiconductors used in their construction. In NPN transistors, a p-type semiconductor is sandwiched between two n-type semiconductors. In PNP transistors, an n-type semiconductor is sandwiched between two p-type semiconductors.
+
+Source: Source 3, Page 54","Page 57, Page 8, Page 54"
+What is a capacitor used for?,"A capacitor is used to filter and regulate voltage in a Half Wave Rectifier (HWR) circuit, and to store charge for later use. It charges quickly due to its low time constant, and discharges slowly through a resistor. It can also be used as a filter to regulate voltage levels, keeping the output at a steady voltage.
+
+I used Source 1, Page 40, and Source 2 was not necessary to answer this question, but it does contain some information about capacitors in a broader context.","Page 40, Page 174, Page 172"
+What is a diode?,"A diode is a semiconductor device with a p-n Junction that is a one way device, allowing current to flow when forward biased (p: + ve and n: - ve).
+
+Source: Source 3, Page 18","Page 18, Page 19, Page 18"
+Explain Boolean algebra briefly.,"Boolean algebra is a branch of Algebra that governs binary digital circuits, where variables can have only two values (ONE or ZERO). It is used to describe different kinds of variables and operations such as OR, AND, and their properties.
+
+Source 1, Page 113; Source 2, Page 107","Page 113, Page 107, Page 114"
+What is a logic gate?,"A logic gate is a fundamental building block of a digital circuit. It has one or more inputs and usually one output, and the output is determined by the LOGIC followed by that particular gate. 
+
+Source: Source 1, Page 107","Page 107, Page 126, Page 107"
+What is a flip-flop?,"A flip-flop is a basic storage element in sequential circuits that has two outputs, Q and Q, which will always remain in opposite states. It has control inputs that can be used to change (toggle) its present state, allowing it to store one bit of information (1 or 0) indefinitely, as long as the device is powered. (Source 1, Page 126 and Source 2, Page 126)","Page 126, Page 126, Page 131"
+What is binary coded decimal?,"Binary coded decimal is a method of representing decimal numbers using their binary equivalents.
+
+I used Source 3, Page 106, and Source 2's discussion on binary number systems.","Page 96, Page 96, Page 106"
+What is a half adder?,"A half adder is a combinational logic circuit that adds two binary numbers, producing a sum (S) and a carry (C) as the output. It has two inputs, called augend and addend bits, and provides two outputs, sum and carry. 
+
+Source 2, Page 123","Page 125, Page 123, Page 124"

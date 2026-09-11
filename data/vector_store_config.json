@@ -1,0 +1,10 @@
+{
+  "embedding_model": "all-MiniLM-L6-v2",
+  "chunk_size": 1000,
+  "chunk_overlap": 150,
+  "collection_name": "basic_electronics",
+  "vector_store_path": "data/vector_store",
+  "yolo_model_path": "data/yolo_model/best.pt",
+  "source_document": "basic_electronics.pdf",
+  "total_chunks": 373
+}
