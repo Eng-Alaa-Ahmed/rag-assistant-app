@@ -111,11 +111,13 @@ http://localhost:8000/query-image.
 <img width="875" height="896" alt="Screenshot_img_query" src="https://github.com/user-attachments/assets/13851606-8c13-42d6-9c7c-b73a4dcf715f" />
 
 
+
+## Video walkthrough:
+(https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
+
 ## Tests
    
    ![pytest results]<img width="1533" height="417" alt="screenshot_pytest" src="https://github.com/user-attachments/assets/9bc75e4f-511c-4abd-99d8-8914d56ceba2" />
-##Video walkthrough:
-(https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
 
 
 
