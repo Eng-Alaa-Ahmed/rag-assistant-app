@@ -109,7 +109,8 @@ http://localhost:8000/query-image.
 
 <img width="735" height="864" alt="screenshot_image_query" src="https://github.com/user-attachments/assets/80f15d12-0e71-46e5-a4b3-a60f8385fd44" />
 
-<img width="780" height="808" alt="screenshot_text_query" src="https://github.com/user-attachments/assets/04da4749-fedb-4abe-9330-86da8aa69a9e" />
+<img width="875" height="896" alt="Screenshot_img_query" src="https://github.com/user-attachments/assets/13851606-8c13-42d6-9c7c-b73a4dcf715f" />
+
 
 ## Tests
    
