@@ -114,7 +114,8 @@ http://localhost:8000/query-image.
 ## Tests
    
    ![pytest results]<img width="1533" height="417" alt="screenshot_pytest" src="https://github.com/user-attachments/assets/9bc75e4f-511c-4abd-99d8-8914d56ceba2" />
-
+##Video walkthrough:
+(https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
 
 
 
