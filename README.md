@@ -72,19 +72,45 @@ Open http://localhost:8000/docs to test /query from the Swagger UI.
 ## API Reference
 
 ### GET /health
-Returns status ok and vector_store_ready true.
+
+Returns `{"status": "ok", "vector_store_ready": true}`.
+
+```bash
+curl http://localhost:8000/health
+```
 
 ### POST /query
-Send a JSON body with a "question" field to http://localhost:8000/query, receive an
-answer with cited sources.
+
+Send a JSON body with a `question` field, receive a grounded answer with cited sources.
+
+```bash
+curl -X POST http://localhost:8000/query \
+  -H "Content-Type: application/json" \
+  -d '{"question": "What is a transistor?"}'
+```
+
+Response:
+```json
+{
+  "answer": "A transistor is a semiconductor device... (Source 1, Page 54)",
+  "sources": ["Page 54", "Page 57"],
+  "detected_components": []
+}
+```
 
 ### POST /query-image (Extended Track)
-Send a multipart form with "question" and "image" fields to
-http://localhost:8000/query-image.
+
+Send a multipart form with `question` and `image` fields.
+
+```bash
+curl -X POST http://localhost:8000/query-image \
+  -F "question=What is this component?" \
+  -F "image=@resistor.jpg"
+```
 
 ## Evaluation Results
 
-## 2.6 Evaluation
+### 2.6 Evaluation
 
 | # | Question | Retrieved Source(s) | Grounded/Correct? | Notes |
 |---|----------|---------------------|--------------------|----|
@@ -101,24 +127,26 @@ http://localhost:8000/query-image.
 
 **Result: 9/10 fully correct and grounded, 1/10 partially correct (grounded but incomplete).**
 
-**Main failure pattern observed:** The only weak case (Q4, capacitor) was not hallucination — the model didn't invent facts — but a **retrieval gap**: the top-3 chunks retrieved for "capacitor" leaned toward filtering/voltage-regulation content and did not surface the more fundamental "energy storage" definition that likely exists elsewhere in the textbook. This suggests the embedding model matched surface-level keyword overlap ("capacitor", "voltage") over conceptual completeness. 
+**Main failure pattern observed:** The only weak case (Q4, capacitor) was not hallucination — the model didn't invent facts — but a **retrieval gap**: the top-3 chunks retrieved for "capacitor" leaned toward filtering/voltage-regulation content and did not surface the more fundamental "energy storage" definition that likely exists elsewhere in the textbook. This suggests the embedding model matched surface-level keyword overlap ("capacitor", "voltage") over conceptual completeness.
 
 **Mitigation:** Increasing `top_k` from 3 to 5 for broader coverage was tested informally and is a reasonable general fix, though it was not re-run systematically for this report to preserve the original evaluation set. No hallucination (answers not grounded in retrieved context) was observed in any of the 10 test questions, which confirms the RAG pipeline is retrieving and citing correctly rather than falling back on the LLM's own parametric knowledge.
 
-## Screenshots:
+## Screenshots
+
+**Text question example:**
 
 <img width="780" height="808" alt="screenshot_text_query" src="https://github.com/user-attachments/assets/88326d9d-e6f9-437e-b232-36eac4f6606e" />
 
+**Image upload example:**
+
 <img width="875" height="896" alt="Screenshot_img_query" src="https://github.com/user-attachments/assets/13851606-8c13-42d6-9c7c-b73a4dcf715f" />
 
+## Video Walkthrough
 
-
-## Video walkthrough:
-(https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
+[Watch the demo video](https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
 
 ## Tests
-   
-   ![pytest results]<img width="1533" height="417" alt="screenshot_pytest" src="https://github.com/user-attachments/assets/9bc75e4f-511c-4abd-99d8-8914d56ceba2" />
 
+**Pytest results:**
 
-
+<img width="1533" height="417" alt="screenshot_pytest" src="https://github.com/user-attachments/assets/9bc75e4f-511c-4abd-99d8-8914d56ceba2" />
