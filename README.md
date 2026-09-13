@@ -138,8 +138,7 @@ curl -X POST http://localhost:8000/query-image \
 <img width="749" height="827" alt="Screenshot_12-9-2026_195727_localhost" src="https://github.com/user-attachments/assets/ae53cf2e-6357-47ee-b44c-70c61913bd17" />
 
 **Image upload example:**
-<img width="878" height="858" alt="Screenshot_12-9-2026_194527_localhost" src="https://github.com/user-attachments/assets/52149a75-6f38-4cea-aa3d-c05baee973bb" />
-
+<img width="842" height="865" alt="Screenshot_13-9-2026_194726_localhost" src="https://github.com/user-attachments/assets/eeed3df0-e265-4399-b345-5b9a6b9494bc" />
 ## Video Walkthrough
 
 [Watch the demo video](https://drive.google.com/file/d/1WfN5j2daVLs4ErHOSNhtPvClCuZcPOd8/view?usp=sharing)
